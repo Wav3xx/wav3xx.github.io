@@ -5,33 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS2 Tips & Aim Trainer</title>
     <style>
-        body {
+        html, body {
+            height: 100%;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0d0d0d;
             color: #00ffff; /* Cyan text */
-            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
         }
 
         header {
-            background: linear-gradient(90deg, #0a0a0a, #000000);
-            padding: 60px 20px;
+            text-align: center;
+            padding: 80px 20px;
+            flex: 0 0 auto;
         }
 
         header h1 {
-            font-size: 4rem; /* Bigger header */
+            font-size: 5rem; /* Bigger header */
             color: #00ffff;
-            margin-bottom: 15px;
-        }
-
-        header p {
-            font-size: 1.4rem;
-            color: #00ffff;
+            margin: 0;
         }
 
         section {
             max-width: 700px;
-            margin: 40px auto;
+            margin: auto;
+            flex: 1 0 auto; /* This makes the section expand to center vertically */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .info-box {
@@ -41,6 +47,7 @@
             border: 2px solid #00ffff;
             margin-bottom: 30px;
             line-height: 1.6;
+            text-align: center;
         }
 
         .btn {
@@ -66,6 +73,7 @@
             background: #1a1a1a;
             font-size: 0.9rem;
             color: #00ffff;
+            flex-shrink: 0; /* keeps footer at bottom */
         }
     </style>
 </head>
@@ -73,7 +81,6 @@
 
     <header>
         <h1>Counter-Strike 2 Training Hub</h1>
-        <p>Pro tips, aim training, and resources to dominate your matches.</p>
     </header>
 
     <section>
@@ -91,6 +98,8 @@
 
 </body>
 </html>
+
+
 
 
 

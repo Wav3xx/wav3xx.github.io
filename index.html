@@ -9,64 +9,55 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0d0d0d;
-            color: #e0e0e0;
+            color: #00ffff; /* Cyan text */
+            text-align: center;
         }
 
         header {
-            background: linear-gradient(90deg, #1a1a1a, #000000);
+            background: linear-gradient(90deg, #0a0a0a, #000000);
             padding: 40px 20px;
-            text-align: center;
         }
 
         header h1 {
             font-size: 2.8rem;
-            color: #ffcc00;
+            color: #00ffff;
             margin-bottom: 10px;
         }
 
         header p {
             font-size: 1.2rem;
-            color: #c0c0c0;
+            color: #00ffff;
         }
 
         section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
+            max-width: 700px;
+            margin: 40px auto;
         }
 
-        h2 {
-            color: #ffcc00;
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .tip {
+        .info-box {
             background-color: #1a1a1a;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border-left: 4px solid #ffcc00;
-        }
-
-        .tip strong {
-            color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #00ffff;
+            margin-bottom: 30px;
+            line-height: 1.6;
         }
 
         .btn {
             display: inline-block;
             padding: 15px 25px;
             font-size: 1.2rem;
-            background: #ffcc00;
-            color: black;
+            background: #00ffff;
+            color: #0d0d0d;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            margin: 10px;
             transition: background 0.3s ease;
         }
 
         .btn:hover {
-            background: #e6b800;
+            background: #00e5e5;
         }
 
         footer {
@@ -74,7 +65,7 @@
             padding: 20px;
             background: #1a1a1a;
             font-size: 0.9rem;
-            color: #888;
+            color: #00ffff;
         }
     </style>
 </head>
@@ -86,23 +77,13 @@
     </header>
 
     <section>
-        <h2>CS2 Quick Tips</h2>
-
-        <div class="tip">
-            <strong>Crosshair Placement:</strong> Keep your crosshair at head level and pre-aim common angles to react faster.
+        <div class="info-box">
+            <p>Welcome to the CS2 Training Hub! Improve your skills, aim faster, and master your movement with our training resources and expert advice.</p>
         </div>
 
-        <div class="tip">
-            <strong>Spray Control:</strong> Learn rifle recoil patterns. The AK-47 and M4A4 have predictable sprays — master them in training maps.
-        </div>
-
-        <div class="tip">
-            <strong>Movement:</strong> Use counter-strafing (press opposite movement key before shooting) for maximum accuracy.
-        </div>
-
-        <a class="btn" href="https://discord.gg/VP9thQpHj8" target="_blank">
-            Buy Premier Aim Trainer
-        </a>
+        <a class="btn" href="#" target="_blank">Watch Video</a>
+        <a class="btn" href="https://discord.gg/VP9thQpHj8" target="_blank">Join Discord</a>
+        <a class="btn" href="#" target="_blank">More Tips</a>
     </section>
 
     <footer>
@@ -111,4 +92,6 @@
 
 </body>
 </html>
+
+
 
